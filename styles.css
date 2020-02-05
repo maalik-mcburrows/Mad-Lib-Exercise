@@ -1,0 +1,61 @@
+body{
+    background-color: purple;
+    vertical-align: middle;
+}
+
+.header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: gold;
+    font: italic 1.2em "Impact", serif;
+    font-size: xx-large;
+    letter-spacing: 1.5px;
+    text-shadow: 10px 10px black;
+}
+
+.giphy-embed{
+    width: 175px;
+    height: 225px;
+}
+
+.hmm{
+    position: relative;
+}
+
+.para{
+    font-size: xx-large;
+    font: italic 1.2em "Impact", serif;
+    background-color: gold;
+    /* border: black;
+    border-width: medium; */
+    max-width: 75%;
+    border-radius: 25px;
+    margin: auto;
+    padding: 50px;
+    letter-spacing: 1.5px;
+    box-shadow: 25px 25px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-18%,5%);
+}
+
+form{
+    text-align: center;
+}
+
+button{
+    background-color: rgb(160, 29, 160);
+}
+
+button:hover{
+    background-color: purple;
+}

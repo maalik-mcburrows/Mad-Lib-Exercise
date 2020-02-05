@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="IDK">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mad Lib</title>
+</head>
+
+<body>
+    <div class="header">
+        <div ><iframe src="https://giphy.com/embed/26VjwfLk7CRslWHSWI" width="100%" height="100%"
+                 frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <h1 >Maalik's Mad Lib</h1 >
+        <div ><iframe src="https://giphy.com/embed/26VjwfLk7CRslWHSWI" width="100%" height="100%"
+                frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+    </div>
+    </div>
+    <div class="hmm">
+        <div class="para">
+            <p>Adrift in space with no food or water, Tony Stark sends a <span id="noun1">_________</span> to Pepper
+                Potts as his oxygen
+                supply starts to dwindle. Meanwhile, the remaining <span id="noun2">_________</span> -- Thor, Black
+                Widow, Captain America
+                and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic
+                <span id="noun3">_________</span> with Thanos -- the evil demigod who decimated the planet and the
+                universe.</p>
+            <form>
+                <label>noun:
+                    <input type="text" id="noun1Input" value="" />
+                </label>
+                <button type="myButton" id="clickMe">Click Me</button>
+                <label>noun:
+                    <input type="text" id="noun2Input" value="" />
+                </label>
+                <button type="myButton2" id="clickMe2">Click Me</button>
+                <label>noun:
+                    <input type="text" id="noun3Input" value="" />
+                </label>
+                <button type="myButton3" id="clickMe3">Click Me</button>
+            </form>
+        </div>
+        </div> </body> <script>
+            const myButton = document.getElementById("clickMe");
+            const myButton2 = document.getElementById("clickMe2");
+            const myButton3 = document.getElementById("clickMe3");
+            const noun1 = document.getElementById("noun1");
+            const noun1Input = document.getElementById("noun1Input");
+            const noun2 = document.getElementById("noun2");
+            const noun2Input = document.getElementById("noun2Input");
+            const noun3 = document.getElementById("noun3");
+            const noun3Input = document.getElementById("noun3Input");
+
+
+
+            myButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log("event", e);
+                console.log("Clicked");
+                noun1.innerHTML = `${noun1Input.value}`;
+            });
+
+            myButton2.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log("event", e);
+                console.log("Clicked");
+                noun2.innerHTML = `${noun2Input.value}`;
+            });
+
+            myButton3.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log("event", e);
+                console.log("Clicked");
+                noun3.innerHTML = `${noun3Input.value}`;
+            });
+        </script>
+
+</html>
